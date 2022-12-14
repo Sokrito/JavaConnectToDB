@@ -27,7 +27,7 @@ public class CreateCourses {
 			// get the instructor from db
 			int theId = 1;
 			Instructor tempInstructor = session.get(Instructor.class, theId);
-			// create some courses
+
 			Course tempCourse1 = new Course("Air Guitar - The Unltimate Guide");
 			Course tempCourse2 = new Course("The Pinball - Masterclass");
 			
@@ -43,7 +43,6 @@ public class CreateCourses {
 			System.out.println("Done!");
 		}
 		finally {
-			// add cleanup code
 			session.close();
 			factory.close();
 		}

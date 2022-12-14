@@ -40,7 +40,6 @@ public class CreateCourseAndReviews {
 			System.out.println("Done!");
 		}
 		finally {
-			// add cleanup code
 			session.close();
 			factory.close();
 		}

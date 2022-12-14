@@ -30,17 +30,14 @@ public class Course {
 	@JoinColumn(name="course_id")
 	private List<Review> reviews;
 	
-	// define constructors
 	public Course() {
 		
 	}
 
-	// define our fields
 	public Course(String title) {
 		this.title = title;
 	}
 	
-	//define getter setters
 
 	public int getId() {
 		return id;
@@ -81,16 +78,8 @@ public class Course {
 		reviews.add(theReview);
 	}
 
-	// define toString
 	@Override
 	public String toString() {
 		return "Course [id=" + id + ", title=" + title + ", instructor=" + instructor + "]";
 	}
-	
-	
-	
-	// annotate fields
-	
-	
-	
 }

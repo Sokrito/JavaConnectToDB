@@ -101,7 +101,6 @@ public class Instructor {
 		this.courses = courses;
 	}
 	
-	// add convenience methods for bi-directional relationship
 	
 	public void add(Course tempCourse) {
 		if(courses == null) {

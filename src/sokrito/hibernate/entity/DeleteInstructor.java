@@ -30,9 +30,6 @@ public class DeleteInstructor {
 			// delete the instructors
 			if (tempInstructor != null) {
 				System.out.println("Deleting: " + tempInstructor);
-				
-				// Note: will ALSO delete associated "details" object
-				// because of CascadeType.ALLL
 				session.delete(tempInstructor);
 			}
 			

@@ -21,8 +21,6 @@ public class InstructorDetail {
 	@Column(name="hobby")
 	private String hobby;
 	
-	// add new field for instructor (also add getter/setters)
-	
 	@OneToOne(mappedBy="instructorDetail", cascade= {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})//cascade=CascadeType.ALL to remove the both Instructor
 	private Instructor instructor;
 	
@@ -36,7 +34,6 @@ public class InstructorDetail {
 	}
 	
 	
-
 	public InstructorDetail() {
 		
 	}

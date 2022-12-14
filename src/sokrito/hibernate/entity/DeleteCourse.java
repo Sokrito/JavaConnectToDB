@@ -41,16 +41,5 @@ public class DeleteCourse {
 			session.close();
 			factory.close();
 		}
-		 
-
 	}
-
 }
-
-
-
-
-
-
-
-
